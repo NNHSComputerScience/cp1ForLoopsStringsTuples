@@ -65,7 +65,27 @@ print()
 #       Tell the user the number of letters in their last name.
 #       Then, determine if the user's name includes the letter "A" or not.
 #       If they do, display "Awesome, you have an A!"
+name = input("\nWhat is your last name? ").title()
+print(name)
+print("You have", len(name), "letters in your last name.\n")
+a_count = 0
+for i in name.lower():
+    if i == "a":
+        a_count += 1
 
+if a_count > 0:
+    print ("Awesome, you have an A!")
+else:
+    print("You don't have an A")
+
+
+# Way #2- another way to use "in"...
+#       Can use it to check to see if an element is in a sequence
+print("\nWay 2:")
+if "a" in name.lower():
+     print ("Awesome, you have an A!")
+else:
+    print("You don't have an A")
 
 # CHALLENGE #3: Password
 #       Ask the user for a password. It must be at least 6 characters long,
