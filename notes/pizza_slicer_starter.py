@@ -4,8 +4,8 @@
 
 word = 'pizza'
 
-# Note: A slice will always occur to the LEFT of the index value given if 
-#       slicing forwards; occurs to the RIGHT if slicing backwards.
+# Note: A slice will always include the first index value specified and
+#       exclude the second index value specified
 
 # slicing shorthand
 #   we can omit values in a slice to represent the start and end of a word
@@ -15,12 +15,12 @@ print(
 '''
   Slicing 'Cheat Sheets':
   
-  FORWARDS:                      BACKWARDS:
- 0   1   2   3   4   5              0   1   2   3   4   
- +---+---+---+---+---+          +---+---+---+---+---+ 
- | p | i | z | z | a |          | p | i | z | z | a |
- +---+---+---+---+---+          +---+---+---+---+---+
--5  -4  -3  -2  -1             -6  -5  -4  -3  -2  -1 
+  FORWARDS:
+     0   1   2   3   4   5
+   +---+---+---+---+---+
+   | p | i | z | z | a |
+   +---+---+---+---+---+
+-6  -5  -4  -3  -2  -1
 
 ''')
  
