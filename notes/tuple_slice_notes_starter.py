@@ -42,8 +42,8 @@ input("\nPress enter to begin CHALLENGE 1: ")
 
 
 # CHALLENGE #2
-#   Display 2 slices showing the Cubs first 4 batters and their positions
-#   (in tuple format)
+#   Store 2 slices: the Cubs first 4 batters and their positions
+#   Print the top of the lineup in a table format, including jersey numbers.
 input("\nPress enter to begin CHALLENGE 2: ")
 
 # Selecting a random element with .randrange()
