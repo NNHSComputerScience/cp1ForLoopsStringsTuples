@@ -31,11 +31,10 @@ input("\nPress enter to begin.")
 
 
 # Practice Challenges:
-#   Increment challenge
+#   Increment challenge (3 to 99 by 3s)
 input("\nPress enter to begin.")
 
-
-#   Counting Down Challenge
+#   Counting Down Challenge (10 to -10 by 2s)
 input("\nPress enter to begin.")
 
 
