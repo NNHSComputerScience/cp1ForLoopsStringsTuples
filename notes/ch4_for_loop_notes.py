@@ -41,14 +41,22 @@ for i in numbers:
 # Controlling loop increment value
 #   Count by 2's
 input("\nPress enter to begin.")
+# range(x, y, z) creates a sequence [x, y) where each element is incremented
+#   by z
+for i in range(0, 21, 2):
+    print(i)
 
 
 # Practice Challenges:
 #   Increment challenge (3 to 99 by 3s)
 input("\nPress enter to begin.")
+for i in range(3, 100, 3):
+    print(i)
 
 #   Counting Down Challenge (10 to -10 by 2s)
 input("\nPress enter to begin.")
+for i in range(10, -11, -2):
+    print(i)
 
 
 # Application Challenges:
