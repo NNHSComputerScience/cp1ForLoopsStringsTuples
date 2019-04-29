@@ -25,7 +25,7 @@ pos = ("CF",
 
 print(cubs)
 print(pos)
-        
+
         
 # INDEXING
 #   Display 1 element: Anthony Rizzo
@@ -40,7 +40,6 @@ print(cubs[0], pos[0])
 input("\nPress enter to begin CHALLENGE 1: ")
 print(cubs[0] , cubs[4], cubs[7])
 
-
 #   Use indexing to print a statement that says:
 #   “The World Series MVP is Ben Zobrist, LF”
 print("The World Series MVP is", cubs[4] + ",", pos[4])
@@ -49,26 +48,29 @@ print("The World Series MVP is", cubs[4] + ",", pos[4])
 # SLICING
 #   Display 2 slices: 1 showing the Cubs first 3 batters and 1 showing their
 #   next 6 batters
-print(cubs[:3])
-print(cubs[3:])
+print(cubs[0:3])    # print(cubs[:3])
+print(cubs[3:9])    # print(cubs[3:])
 
 
 # CHALLENGE #2
 #   Store 2 slices: the Cubs first 4 batters and their positions
-#   Print the top of the lineup in a table format, including jersey numbers.
+#   Print the top of the lineup in a table format
+#   Name            Pos
+#   Dexter Fowler   CF
+#   Kyle Schwarber  DH
+#   ...
 input("\nPress enter to begin CHALLENGE 2: ")
-print()
-top_cubs = cubs[:4]
-top_pos = pos[:4]
+top_cubs = cubs[0:4]
+top_post = pos[0:4]
+print("Name\tPos")
 for i in range(len(top_cubs)):
     print(top_cubs[i] + "\t" + top_pos[i])
-
+    
 
 # Selecting a random element with .randrange()
-print(cubs[random.randrange(len(cubs))])
+
 
 # Selecting a random element with .choice()
-print(random.choice(cubs))
 
 
 # CHALLENGE #3
