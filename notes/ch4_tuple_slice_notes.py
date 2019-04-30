@@ -61,7 +61,7 @@ print(cubs[3:9])    # print(cubs[3:])
 #   ...
 input("\nPress enter to begin CHALLENGE 2: ")
 top_cubs = cubs[0:4]
-top_post = pos[0:4]
+top_pos = pos[0:4]
 print("Name\tPos")
 for i in range(len(top_cubs)):
     print(top_cubs[i] + "\t" + top_pos[i])
@@ -74,11 +74,25 @@ for i in range(len(top_cubs)):
 
 
 # CHALLENGE #3
-#   Create a 3rd tuple to hold all jersey numbers.
 #   Select a random Cub using random.choice() and print info for batters in the 
 #   lineup, up to and including the random batter(table format & using a for loop)
 input("\nPress enter to begin CHALLENGE 3: ")
 
+# 1: choose a random player
+rand_cub = random.choice(cubs)
+print("random cub: " + rand_cub)
+
+# 2: find the index of the random player
+rand_index = -1
+for i in range(len(cubs)):
+    if cubs[i] == rand_cub:
+        rand_index = i
+print(rand_index)
+
+# 3: print all the players from index 0 to the index of the random player
+print("Name\tPos")
+for i in range(rand_index + 1):
+	print(cubs[i] + "\t" + pos[i])
 
 input("Press enter to exit.")
 
