@@ -53,7 +53,6 @@ input("\nPress enter to begin CHALLENGE 2: ")
 
 
 # CHALLENGE #3
-#   Create a 3rd tuple to hold all jersey numbers.
 #   Select a random Cub using random.choice() and print info for batters in the 
 #   lineup, up to and including the random batter(table format & using a for loop)
 input("\nPress enter to begin CHALLENGE 3: ")
